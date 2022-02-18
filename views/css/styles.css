@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    font-size: 30px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(14, 14, 14);
+}
+
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(88, 88, 88);
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+header > div:hover{
+    cursor: pointer;
+}
+
+.letter{
+    height: 1.8rem;
+    width: 1.8rem;
+    border: 1px solid rgb(88, 88, 88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.letter_grid{
+    margin-top: 1.5%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.keyboard_grid{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 0.8rem;
+}
+
+.row-keys{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.key{
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid rgb(88, 88, 88);
+    padding: 1%;
+    background-color: grey;
+    border-radius: 20%;
+}
+
+.key:hover{
+    background-color: rgb(97, 97, 97);
+    cursor: pointer;
+}
+
+.help{
+    margin-top: 1rem;
+    width: 40%;
+    font-size: 16px;
+}
+
+.help_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.x_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

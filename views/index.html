@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex's Wordle Clone</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <!--libs-->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.slim.js"
+    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+    crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/37712aa869.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!--app-script--->
+    <script src ="/js/script.js"></script>
+</head>
+
+<header class="web_header">
+    <div class="left">
+        <i class="fa-solid fa-bars fa-xs"></i>
+        <i class="fa-solid fa-question fa-xs"></i>
+    </div>
+    <p>Alex's Wordle Clone</p>
+    <div class="right">
+        <i class="fa-solid fa-chart-column fa-xs"></i>    
+        <i class="fa-solid fa-gear fa-xs"></i>
+    </div>
+</header>
+<body>
+    <div class="letter_grid">
+        <div class="row">
+            <div class="letter"></div>
+            <div class="letter"></div>
+            <div class="letter"></div>
+            <div class="letter"></div>
+            <div class="letter"></div>          
+        </div>
+        <div class="row">
+            <div class="letter"></div>
+            <div class="letter"></div>
+            <div class="letter"></div>
+            <div class="letter"></div>
+            <div class="letter"></div>
+        </div>
+        <div class="row">
+            <div class="letter"></div>
+            <div class="letter"></div>
+            <div class="letter"></div>
+            <div class="letter"></div>
+            <div class="letter"></div>
+        </div>
+        <div class="row">
+            <div class="letter"></div>
+            <div class="letter"></div>
+            <div class="letter"></div>
+            <div class="letter"></div>
+            <div class="letter"></div>
+        </div>
+        <div class="row">
+            <div class="letter"></div>
+            <div class="letter"></div>
+            <div class="letter"></div>
+            <div class="letter"></div>
+            <div class="letter"></div>
+        </div>        
+        <div class="row">
+            <div class="letter"></div>
+            <div class="letter"></div>
+            <div class="letter"></div>
+            <div class="letter"></div>
+            <div class="letter"></div>
+        </div>                
+    </div>
+
+    <div class="keyboard_grid">
+        <div class="row-keys">
+            <div class="key">q</div>
+            <div class="key">w</div>
+            <div class="key">e</div>
+            <div class="key">r</div>
+            <div class="key">t</div>
+            <div class="key">y</div>
+            <div class="key">u</div>
+            <div class="key">i</div>
+            <div class="key">o</div>
+            <div class="key">p</div>
+        </div>
+        <div class="row-keys">
+            <div class="key">a</div>
+            <div class="key">s</div>
+            <div class="key">d</div>
+            <div class="key">f</div>
+            <div class="key">g</div>
+            <div class="key">h</div>
+            <div class="key">j</div>
+            <div class="key">k</div>
+            <div class="key">l</div>
+        </div>
+        <div class="row-keys">
+            <div class="key">Enter</div>
+            <div class="key">z</div>
+            <div class="key">x</div>
+            <div class="key">c</div>
+            <div class="key">v</div>
+            <div class="key">b</div>
+            <div class="key">n</div>
+            <div class="key">m</div>
+            <div class="key"><i class="fa-solid fa-delete-left fa-sm"></i></div>
+        </div>
+    </div>
+
+    <div class="help">
+        <div class="help_header"">
+            <h2>HOW TO PLAY</h2>
+            <div class="x_icon">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+        </div>
+        <hr>
+        <p>Guess the <span style="font-weight: bold;">WORDLE</span> in six tries.</p>
+        <p>Each guess must be a valid five-letter word. Hit the enter button to submit.</p>
+        <p>After each guess, the color of the tiles will change to show how close your</p>
+        <p>guess was to the word.</p>
+        <hr>
+        <p style="font-weight: bold;">Examples</p>
+        <div class="row">
+            <div class="letter">W</div>
+            <div class="letter">E</div>
+            <div class="letter">A</div>
+            <div class="letter">R</div>
+            <div class="letter">Y</div>
+        </div>
+        <p>The letter <span style="font-weight: bold;">W</span> is in the word and in the correct spot.</p>
+        <div class="row">
+            <div class="letter">P</div>
+            <div class="letter">I</div>
+            <div class="letter">L</div>
+            <div class="letter">L</div>
+            <div class="letter">S</div>
+        </div>    
+        <p>The letter <span style="font-weight: bold;">I</span> is in the word but in the wrong spot.</p>
+        <div class="row">
+            <div class="letter">V</div>
+            <div class="letter">A</div>
+            <div class="letter">G</div>
+            <div class="letter">U</div>
+            <div class="letter">E</div>
+        </div>
+        <p>The letter <span>U</span> is not in the word and not in any spot</p>
+    </div>
+</body>
+</html>
