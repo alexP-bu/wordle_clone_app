@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  worldle-app:
+    container_name: wordle-app
+    build: 
+      dockerfile: Dockerfile
+      context: ./
+      args:
+        NODE_ENV: development
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    env_file:
+      - ./.env
+    image: world-app-image
+    ports:
+      - 8081:8081
+    
