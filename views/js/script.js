@@ -76,7 +76,7 @@ $(document).ready(function () {
     $('.enter_key').click(function (e) { 
         //win condition
         if(curString == wordle){
-            for(var i = 0; i < 5; i++){
+            for(let i = 0; i < 5; i++){
                 var letter = document.querySelector('.letter_grid div:nth-child(' + row + ') div:nth-child(' + (i+1) + ')');
                 $(letter).css("background-color", "rgb(83,141,78)");
             }
@@ -95,11 +95,12 @@ $(document).ready(function () {
                 $('.key').hide();
             }
             if(guesses.has(curString)){
-                for(var i = 0; i < curString.length; i++){
+                for(let i = 0; i < curString.length; i++){
                     var letter = document.querySelector('.letter_grid div:nth-child(' + row + ') div:nth-child(' + (i+1) + ')');
                     if(curString.charAt(i) == wordle.charAt(i)){
                         $(letter).css("background-color", "rgb(83,141,78)");
                     }else if(wordle.includes(curString.charAt(i))){
+                        //TODO: add a fix for duplicate guesses and answers with a map and counters
                         $(letter).css("background-color", "rgb(181,159,59)"); 
                     }else{
                         $(letter).css("background-color", "rgb(58,58,60)");
