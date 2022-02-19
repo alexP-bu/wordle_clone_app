@@ -10,7 +10,14 @@
     background-color: rgb(14, 14, 14);
 }
 
-
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 header{
     display: flex;
@@ -18,10 +25,7 @@ header{
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgb(88, 88, 88);
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    width: 95%;
 }
 
 header > div:hover{
@@ -36,9 +40,11 @@ header > div:hover{
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    font-size: 24px;
 }
 
 .letter_grid{
+    width: 100%;
     margin-top: 1.5%;
     align-items: center;
     display: flex;
@@ -53,6 +59,7 @@ header > div:hover{
 }
 
 .keyboard_grid{
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -96,4 +103,47 @@ header > div:hover{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+.help p{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.player_stats{
+    background-color: rgb(41, 41, 41);
+    height: 30%;
+    width: 30%;
+    position: absolute;
+    top: 30%;
+    font-size: 22px;
+    border-radius: 2%;
+    text-align: center;
+}
+
+.player_stats ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14px;
+    list-style-type: none;
+}
+
+.player_stats li{
+    flex: 1 1 0px;
+    display: inline;
+}
+
+.player_stats p{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.stats_header span{
+    top: 15px;
+    right: 15px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

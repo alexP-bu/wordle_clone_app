@@ -20,18 +20,19 @@
     <script src ="/js/script.js"></script>
 </head>
 
-<header class="web_header">
-    <div class="left">
-        <i class="fa-solid fa-bars fa-xs"></i>
-        <i class="fa-solid fa-question fa-xs"></i>
-    </div>
-    <p>Alex's Wordle Clone</p>
-    <div class="right">
-        <i class="fa-solid fa-chart-column fa-xs"></i>    
-        <i class="fa-solid fa-gear fa-xs"></i>
-    </div>
-</header>
 <body>
+    <header class="web_header">
+        <div class="left">
+            <i class="fa-solid fa-bars fa-xs"></i>
+            <span class="question_link"><i class="fa-solid fa-question fa-xs"></i></span>
+        </div>
+        <p>Alex's Wordle Clone</p>
+        <div class="right">
+            <span class="stats_link"><i class="fa-solid fa-chart-column fa-xs"></i></span>   
+            <i class="fa-solid fa-gear fa-xs"></i>
+        </div>
+    </header>
+
     <div class="letter_grid">
         <div class="row">
             <div class="letter"></div>
@@ -129,7 +130,7 @@
         <hr>
         <p style="font-weight: bold;">Examples</p>
         <div class="row">
-            <div class="letter">W</div>
+            <div class="letter" style="background-color: green;">W</div>
             <div class="letter">E</div>
             <div class="letter">A</div>
             <div class="letter">R</div>
@@ -138,7 +139,7 @@
         <p>The letter <span style="font-weight: bold;">W</span> is in the word and in the correct spot.</p>
         <div class="row">
             <div class="letter">P</div>
-            <div class="letter">I</div>
+            <div class="letter" style="background-color: gold;">I</div>
             <div class="letter">L</div>
             <div class="letter">L</div>
             <div class="letter">S</div>
@@ -148,10 +149,31 @@
             <div class="letter">V</div>
             <div class="letter">A</div>
             <div class="letter">G</div>
-            <div class="letter">U</div>
+            <div class="letter" style="background-color: darkgrey;">U</div>
             <div class="letter">E</div>
         </div>
         <p>The letter <span>U</span> is not in the word and not in any spot</p>
+    </div>
+
+    <div class="player_stats">
+        <div class="stats_header">
+            <p>Player Statistics</p>
+            <span class="x-button"><i class="fa-solid fa-x"></i></span>
+        </div>
+        <ul>
+            <li>0</li>
+            <li>0</li>
+            <li>0</li>
+            <li>0</li>
+        </ul>
+        <ul>
+            <li>Played</li>
+            <li>Win %</li>
+            <li>Current Streak</li>
+            <li>max Streak</li>
+        </ul>
+        <p>Guess Distribution</p>
+        <p>No data</p>
     </div>
 </body>
 </html>
