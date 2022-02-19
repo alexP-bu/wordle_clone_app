@@ -73,7 +73,7 @@ header > div:hover{
     gap: 10px;
 }
 
-.key{
+.key, .backspace_key, .enter_key{
     font-size: 16px;
     font-weight: bold;
     border: 1px solid rgb(88, 88, 88);
