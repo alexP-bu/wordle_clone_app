@@ -77,7 +77,7 @@ $(document).ready(function () {
         //win condition
         if(curString == wordle){
             for(let i = 0; i < 5; i++){
-                var letter = document.querySelector('.letter_grid div:nth-child(' + row + ') div:nth-child(' + (i+1) + ')');
+                let letter = document.querySelector('.letter_grid div:nth-child(' + row + ') div:nth-child(' + (i+1) + ')');
                 $(letter).css("background-color", "rgb(83,141,78)");
             }
             $('.error_text').text("YOU WIN!");
@@ -96,7 +96,7 @@ $(document).ready(function () {
             }
             if(guesses.has(curString)){
                 for(let i = 0; i < curString.length; i++){
-                    var letter = document.querySelector('.letter_grid div:nth-child(' + row + ') div:nth-child(' + (i+1) + ')');
+                    let letter = document.querySelector('.letter_grid div:nth-child(' + row + ') div:nth-child(' + (i+1) + ')');
                     if(curString.charAt(i) == wordle.charAt(i)){
                         $(letter).css("background-color", "rgb(83,141,78)");
                     }else if(wordle.includes(curString.charAt(i))){
